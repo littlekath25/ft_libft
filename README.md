@@ -1,2 +1,2 @@
 # libft
-My very first library
+My very first library, please don't roast me.
