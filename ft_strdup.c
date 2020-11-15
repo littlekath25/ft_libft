@@ -6,12 +6,11 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:41:57 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 00:27:03 by kfu           ########   odam.nl         */
+/*   Updated: 2020/11/15 21:24:41 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 
 char	*ft_strdup(const char *str)
 {
