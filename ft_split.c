@@ -6,12 +6,11 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 12:17:08 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 21:12:45 by kfu           ########   odam.nl         */
+/*   Updated: 2020/11/15 21:21:14 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static char		**ft_free(char **split)
 {
