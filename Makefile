@@ -6,7 +6,7 @@
 #    By: kfu <kfu@student.codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 23:09:58 by kfu           #+#    #+#                  #
-#    Updated: 2020/11/15 17:19:29 by kfu           ########   odam.nl          #
+#    Updated: 2020/11/15 16:32:34 by kfu           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,9 @@ $(NAME): $(O_FILES)
 
 $(O_FILES): $(H_FILES)
 	$(CC) $(CFLAGS) -c $(SRC)
+
+so: $(O_FILES)
+	gcc -shared -o libft.so $(O_FILES)
 
 bonus: $(O_FILES) $(BO_FILES)
 	$(AR) rc $(NAME) $(O_FILES) $(BO_FILES)
