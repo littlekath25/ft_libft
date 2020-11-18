@@ -6,11 +6,12 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:41:44 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 15:10:47 by kfu           ########   odam.nl         */
+/*   Updated: 2020/11/18 10:40:58 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
