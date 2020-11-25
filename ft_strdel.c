@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_memccpy.c                                       :+:    :+:            */
+/*   ft_strdel.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/29 16:41:34 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/18 16:29:14 by kfu           ########   odam.nl         */
+/*   Created: 2020/11/23 18:21:44 by kfu           #+#    #+#                 */
+/*   Updated: 2020/11/23 18:22:17 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
-void	*ft_memccpy(void *dest, const void *src, int c, size_t len)
+void	ft_strdel(char **s)
 {
-	unsigned char		*d;
-	const char			*s;
-	size_t				i;
-
-	d = (unsigned char *)dest;
-	s = (const char *)src;
-	i = 0;
-	while (i < len)
+	if (s)
 	{
-		d[i] = s[i];
-		i++;
-		if (d[i - 1] == (unsigned char)c)
-			return (dest + i);
+		free(*s);
+		*s = NULL;
 	}
-	return (NULL);
 }

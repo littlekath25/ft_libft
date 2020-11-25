@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 18:46:35 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 00:16:20 by kfu           ########   odam.nl         */
+/*   Updated: 2020/11/23 18:22:44 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+void			ft_strdel(char **s);
 void			*ft_calloc(size_t blocks, size_t size);
 void			*ft_memset(void *buf, int c, size_t len);
 void			*ft_memcpy(void *dest, const void *src, size_t len);
