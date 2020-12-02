@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/04 13:20:58 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/09 18:31:53 by kfu           ########   odam.nl         */
+/*   Updated: 2020/12/02 12:19:19 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		slen;
 	int		i;
 
-	i = 0;
 	if (s == NULL)
 		return (0);
 	slen = ft_strlen(s) + 1;
@@ -28,6 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		free(tmp);
 		return (0);
 	}
+	i = 0;
 	while (s[i])
 	{
 		tmp[i] = f(i, s[i]);

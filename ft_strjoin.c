@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/03 14:09:03 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 12:01:57 by kfu           ########   odam.nl         */
+/*   Updated: 2020/12/02 12:19:42 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	if (!str1 || !str2)
 		return (NULL);
 	tmp = (char *)malloc(ft_strlen(str1) + ft_strlen(str2) + 1);
-	i = 0;
 	if (!tmp)
 		return (NULL);
+	i = 0;
 	while (str1[i])
 	{
 		tmp[i] = str1[i];
