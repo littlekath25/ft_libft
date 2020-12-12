@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 12:17:08 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/16 23:30:07 by kfu           ########   odam.nl         */
+/*   Updated: 2020/12/03 21:51:33 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,24 @@ char			**ft_split(char	const *s, char c)
 		return (NULL);
 	split = fill(split, s, c, words);
 	return (split);
+}
+
+
+int	main(void)
+{
+       char   str1[] = "split      this for  me !";
+       char   del = ' ';
+       char   **print;
+       size_t i;
+       print = ft_split(str1, del);
+       i = 0;
+       while (i < 5)
+       {
+               printf("%s\n", print[i]);
+               free(print[i]);
+               i++;
+       }
+       free(print[i]);
+       free (print);
+       return (1);
 }

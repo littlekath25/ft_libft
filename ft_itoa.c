@@ -6,12 +6,13 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 14:44:27 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 15:09:28 by kfu           ########   odam.nl         */
+/*   Updated: 2020/12/03 20:22:54 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <limits.h>
+#include <stdio.h>
 
 static int		ft_intlen(int n)
 {
@@ -74,4 +75,11 @@ char			*ft_itoa(int n)
 	len--;
 	makeint(tmp, isnegative, n, len);
 	return (tmp);
+}
+
+int		main(void)
+{
+	int a =    -  -45;
+	printf("%s\n", ft_itoa(a));
+	return (0);
 }
