@@ -6,13 +6,13 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:42:17 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/16 19:40:47 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:31:20 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str)

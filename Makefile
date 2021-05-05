@@ -6,7 +6,7 @@
 #    By: kfu <kfu@student.codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 23:09:58 by kfu           #+#    #+#                  #
-#    Updated: 2020/11/16 23:33:33 by kfu           ########   odam.nl          #
+#    Updated: 2021/05/05 15:29:57 by kfu           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRC = 		ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c\
 			ft_strchr.c ft_strrchr.c ft_strdup.c ft_strjoin.c\
 			ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c\
 			ft_strncmp.c ft_strnstr.c ft_strtrim.c ft_substr.c\
-			ft_tolower.c ft_toupper.c
+			ft_atof.c ft_free_split.c ft_strcmp.c ft_strncmp_rev.c\
+			ft_tolower.c ft_toupper.c ft_split_words.c
 BONUS =		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
 			ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c\
 			ft_lstmap.c

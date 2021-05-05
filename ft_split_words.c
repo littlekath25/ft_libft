@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 12:17:08 by kfu           #+#    #+#                 */
-/*   Updated: 2021/05/05 15:29:43 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:27:46 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	*ft_free(char **split, int i)
 	return (NULL);
 }
 
-static int	t_countwords(char const *s, char c)
+static int	ft_countwords(char const *s, char c)
 {
 	int		i;
 	int		words;
@@ -86,7 +86,7 @@ static char	**fill(char **split, const char *s, char c, int words)
 	return (split);
 }
 
-char	**ft_split(char	const *s, char c)
+char	**ft_split_words(char	const *s, char c, int *total_words)
 {
 	char	**split;
 	int		words;
@@ -98,5 +98,6 @@ char	**ft_split(char	const *s, char c)
 	if (split == NULL)
 		return (NULL);
 	split = fill(split, s, c, words);
+	*total_words = words;
 	return (split);
 }

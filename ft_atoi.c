@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:41:04 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 00:11:15 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:30:39 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 static int	ft_isspace(int c)
 {
-	if (c == ' ' || c == '\n' || c == '\t'
+	if (c == ' ' || c == '\n' || c == '\t' \
 	|| c == '\v' || c == '\f' || c == '\r')
 		return (1);
 	return (0);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int res;
-	int sign;
-	int i;
+	int	res;
+	int	sign;
+	int	i;
 
 	res = 0;
 	sign = 1;

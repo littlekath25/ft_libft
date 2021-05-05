@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/13 18:55:59 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/15 00:06:58 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:32:55 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *node;
+	t_list	*node;
 
 	node = *lst;
 	if (node != NULL)

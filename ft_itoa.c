@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 14:44:27 by kfu           #+#    #+#                 */
-/*   Updated: 2020/12/03 20:22:54 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:32:47 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 #include <limits.h>
 #include <stdio.h>
 
-static int		ft_intlen(int n)
+static int	ft_intlen(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n == 0)
@@ -34,14 +34,14 @@ static int		ft_intlen(int n)
 	return (len);
 }
 
-static int		ft_isnegative(int n)
+static int	ft_isnegative(int n)
 {
 	if (n < 0)
 		return (1);
 	return (0);
 }
 
-static char		*makeint(char *tmp, int isnegative, int n, int len)
+static char	*makeint(char *tmp, int isnegative, int n, int len)
 {
 	while (n > 0)
 	{
@@ -54,7 +54,7 @@ static char		*makeint(char *tmp, int isnegative, int n, int len)
 	return (tmp);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		isnegative;
 	char	*tmp;
@@ -75,11 +75,4 @@ char			*ft_itoa(int n)
 	len--;
 	makeint(tmp, isnegative, n, len);
 	return (tmp);
-}
-
-int		main(void)
-{
-	int a =    -  -45;
-	printf("%s\n", ft_itoa(a));
-	return (0);
 }

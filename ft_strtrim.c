@@ -6,7 +6,7 @@
 /*   By: kfu <kfu@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 13:06:31 by kfu           #+#    #+#                 */
-/*   Updated: 2020/11/16 16:35:57 by kfu           ########   odam.nl         */
+/*   Updated: 2021/05/05 15:31:11 by kfu           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static int	ft_charfind(char c, char const *set)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (set[i])
@@ -29,7 +29,7 @@ static int	ft_charfind(char c, char const *set)
 
 static char	*newstr(char *tmp, char const *str, int start, int end)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (start < end)
@@ -42,7 +42,7 @@ static char	*newstr(char *tmp, char const *str, int start, int end)
 	return (tmp);
 }
 
-char		*ft_strtrim(char const *str, char const *set)
+char	*ft_strtrim(char const *str, char const *set)
 {
 	char	*tmp;
 	int		start;
