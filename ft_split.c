@@ -26,7 +26,7 @@ static void	*ft_free(char **split, int i)
 	return (NULL);
 }
 
-static int	t_countwords(char const *s, char c)
+static int	ft_countwords(char const *s, char c)
 {
 	int		i;
 	int		words;

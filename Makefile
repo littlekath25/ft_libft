@@ -26,33 +26,23 @@ SRC = 		ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c\
 			ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c\
 			ft_strncmp.c ft_strnstr.c ft_strtrim.c ft_substr.c\
 			ft_atof.c ft_free_split.c ft_strcmp.c ft_strncmp_rev.c\
-			ft_tolower.c ft_toupper.c ft_split_words.c
-BONUS =		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
+			ft_tolower.c ft_toupper.c ft_split_words.c\
+			ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
 			ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c\
 			ft_lstmap.c
-BO_FILES =	$(BONUS:.c=.o)
-
-ifdef WITH_BONUS
-OBJ_FILES = $(O_FILES) $(BO_FILES)
-else
-OBJ_FILES = $(O_FILES)
-endif
 
 all: $(NAME)
 
-$(NAME): $(OBJ_FILES)
+$(NAME): $(O_FILES)
 	$(AR) rcs $(NAME) $(O_FILES)
 
 %.o: %.c $(H_FILES)
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 clean:
-	$(RM) $(O_FILES) $(BO_FILES)
+	$(RM) $(O_FILES)
 
 fclean: clean
 	$(RM) $(NAME)
-
-bonus:
-	$(MAKE) WITH_BONUS=1 all
 
 re: fclean all
